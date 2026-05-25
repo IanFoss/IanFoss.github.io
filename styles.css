@@ -1,0 +1,116 @@
+/* General page styling */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  color: #222;
+  background-color: #f4f6f8;
+}
+
+/* Header */
+header {
+  background-color: #1f2937;
+  color: white;
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+header p {
+  margin-top: 0.5rem;
+  font-size: 1.1rem;
+  color: #d1d5db;
+}
+
+/* Main content area */
+main {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+/* Section cards */
+section {
+  background-color: white;
+  margin-bottom: 2rem;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+section h2 {
+  margin-top: 0;
+  color: #1f2937;
+  border-bottom: 2px solid #e5e7eb;
+  padding-bottom: 0.5rem;
+}
+
+/* Paragraphs */
+p {
+  margin-bottom: 1rem;
+}
+
+/* Links */
+a {
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* YouTube video */
+iframe {
+  display: block;
+  max-width: 100%;
+  margin: 1rem 0;
+  border-radius: 8px;
+}
+
+/* Optional button-style links */
+.button-link {
+  display: inline-block;
+  background-color: #2563eb;
+  color: white;
+  padding: 0.7rem 1rem;
+  border-radius: 8px;
+  margin-top: 0.5rem;
+}
+
+.button-link:hover {
+  background-color: #1d4ed8;
+  text-decoration: none;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  color: #6b7280;
+  font-size: 0.9rem;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  section {
+    padding: 1.25rem;
+  }
+
+  iframe {
+    height: 240px;
+  }
+}
