@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">cs-360_project_three</string>
+    <string name="username_hint_text">Username</string>
+    <string name="password_hint_text">Password</string>
+    <string name="login_button">Log In</string>
+    <string name="new_account_button_text">Create Account</string>
+    <string name="logo_description">Inventory Manager Logo</string>
+    <string name="new_user">New User? Click Here</string>
+    <string name="confirm_password">Confirm Password </string>
+    <string name="create_account">Create Account</string>
+    <string name="item_name_header">Name</string>
+    <string name="item_id_header">ID</string>
+    <string name="item_location_header">Location</string>
+    <string name="item_qty_header">Quantity</string>
+    <string name="quantity_abbreviation">Qty: %d</string>
+    <string name="delete_button_content_description">Delete Icon</string>
+    <string name="fab_description">Add Item</string>
+    <string name="change_quantity_name">Change quantity for %1$s?</string>
+    <string name="new_quantity">New Quantity</string>
+    <string name="Search">Search</string>
+    <string name="search">Search</string>
+
+
+</resources>
