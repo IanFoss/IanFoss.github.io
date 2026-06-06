@@ -70,11 +70,16 @@
       View Enhancement One Code
     </a>
   </p>
-  <p>
-    <a href="https://github.com/IanFoss/IanFoss.github.io/tree/main/narratives/Enhancement One Narrative.pdf">
-      View Enhancement One Narrative
-    </a>
-  </p>
+   <h1>   
+    <p>
+    
+	    The artifact used for this enhancement is a mobile application that was created in a course I previously took at SNHU, CS-360 Mobile Architecture and Programming. It is an inventory management application developed in Java that supports persistent data for users and items using the Room database. The app allows users to create an account, and then log in. They will then navigate to the inventory screen, where they can view existing inventory items, as well as add, edit, and delete items.
+	    I selected this item for the artifact because the application was very basic in its original form, providing a lot of opportunity to improve it. The item also represents a complete application in the sense that there are multiple connected parts that provide value that could be used in real-life, rather than just a coding exercise. Converting the project to Kotlin provided a way to modernize the application, as Kotlin is the standard programming language for Android applications. This artifact showcased my skills in a couple different aspects. It allowed me to demonstrate skills in Android architecture, including using activities for screen behavior, Room entities for database tables, DAO interfaces for database queries, repositories for data access, and an adapter for displaying inventory items in a RecyclerView. I was also able to demonstrate my ability to take an existing application and identify areas for improvement after analyzing the existing Java code. The artifact was improved by converting the Java classes to Kotlin classes, which reduced boilerplate and improved readability. Kotlin features such as null safety, data classes, lambda expressions were used to make the code less prone to errors. The input validation was also improved. I added input validation to prevent duplicate and blank usernames, blank item names, and negative item quantities. I also added stronger password requirements to improve the baseline security for accounts.
+	    I feel I did meet the course outcomes I had planned to meet for this enhancement. The enhancement strongly aligns with course outcome four because it utilizes modern Android tools and computing practices that will directly provide real-life value in inventory tracking. The enhancement improved the prospect of collaboration because it led to code that is more readable and easier to maintain. If other developers were hypothetically working on the application these improvements would improve the collaborative team environment.
+	    This enhancement provided a great opportunity to learn about the Kotlin programming language and patterns. I gained a better understanding of how Kotlin null safety works. I had to think more carefully about which values could potentially be null values and where it is appropriate to use the “?” operator to allow null values. For example, the Room query that searched for a user needed to potentially return a null UserEntity object if no user was found. Before the enhancement, the code used Java Consumer patterns to return data. Changing those to Kotlin function types really cleaned up the code and made it easier to read. One challenge I had was not breaking the app when changing the code over to Kotlin. Several times I had made changes that would make the app crash in certain spots. 
+
+    </p>
+   </h1>
 </section>
 
     
@@ -86,11 +91,14 @@
       View Enhancement Two Code
     </a>
   </p>
-  <p>
-    <a href="narratives/Enhancement Two Narrative.pdf">
-      View Enhancement Two Narrative
-    </a>
-  </p>
+    <h1>
+      <p>
+        The artifact I chose for this enhancement was again the Android application I created in my previous SNHU class, CS-360 Mobile Architecture and Programming. It is an inventory management app that supports persistent data for users and inventory items using the Room database. I chose this artifact for the enhancement because it already utilizes data structures and algorithms, but on a very basic level that can be improved well. The list of items is the perfect place to implement data structures and algorithms, as those aspects will directly affect how the list of items can be manipulated in the application. This is a common use case in the industry that can provide real value to users. 
+        The artifact showcases my ability to work with list-based data. It demonstrates principles of algorithmic thinking, specifically with the searching and sorting algorithms that I implemented in the enhancement. Search logic was added that improved usability by allowing users to find an item in the inventory without scrolling through the list manually. Filtering logic for low stock or out of stock items in the inventory was also added. Finally, sorting logic was added to allow users to view items alphabetically or by quantity. Since the application uses the Room database, the SQL queries dictated the algorithmic complexity involved in fulfilling the functionality. The search and filter functionality, along with updating the RecyclerView with the altered list of items, needs to iterate through every item in the list at most once. This is because the search logic needs to find any item with a matching string, the filter logic needs to find items that meet the filter criteria, and the RecyclerView adapter needs to update the RecyclerView with the result set after the modifications have been made. From an algorithmic complexity standpoint, the worst-case scenario time complexity for these operations will be O(n), where n is the number of items in the inventory. For the sorting functionality, there is an increased operational complexity. The Room database sorting operations are abstracted away by SQLite after the ORDER BY query is passed to it. Generally speaking, the common complexity estimate for sorting can be described as O(n log n), which could be accomplished by the quicksort or merge sort algorithms that are commonly used. While these enhancements do perform more operations and utilize more memory than the original app, the efficiency for the user is greatly improved as they no longer have to manually scroll through the list to find an item.
+	      I believe I did meet the course outcomes for this enhancement that were planned in module one. This enhancement strongly supports the course outcomes of designing and evaluating computing systems using algorithmic principles. The application uses a collection of inventory objects and applies searching, sorting, and filtering logic. This demonstrates how data structures can be used to store records, and how algorithms can be implemented to manipulate those records in useful ways. This enhancement also supports the course outcome of using well-founded computing techniques. The logic for this additional functionality was implemented through Room DAO queries and repository methods. This contributed to a separation of concerns between the activity/UI logic and the database operations. I do not have any updates to my coverage plans at this time. 
+	      This enhancement provided me with good learning experiences in a couple of ways. I learned how to use the RecyclerView in more depth. The inventory list needed to initially load every item but then display only the items that match the search, sort, or filter criteria. This required ensuring I was observing the most recent LiveData source and updating the adapter with the new list of items. One challenge was ensuring I was updated all the required classes to maintain the separation of concerns. It would have been a lot easier to just add all the logic in the inventory activity. Instead, to enhance the artifact using Android best practices, I needed to create new DAO queries to support the new functionality, repository methods to utilize the DAO queries, and then add logic for the UI components and repository method calls. Overall, this enhancement was a good learning experience in applying searching, sorting, and filtering logic to a real data set.
+      </p>
+    </h1>
 </section>
 
 <section>
@@ -101,11 +109,14 @@
       View Enhancement Three Code
     </a>
   </p>
-  <p>
-    <a href="narratives/Enhancement Three Narrative.pdf">
-      View Enhancement Three Narrative
-    </a>
-  </p>
+  <h1>
+      <p>
+	      This artifact is the same as the previous two artifacts, which is the mobile inventory management application developed for the Android OS. It was created in a previous course at SNHU, CS-360 Mobile Architecture and Programming. The application allows users to create an account, which they must do before logging in. After the user successfully creates an account and logs in, the app will navigate to the inventory screen, where they can view the items in the inventory, add an item, modify item attributes, and delete items. The application uses Room to store data for user accounts and for inventory items.
+	      I selected this artifact for my ePortfolio because the current implementation of the database lacks several aspects that would make the implementation acceptable in a professional application, making it a prime candidate for enhancement. The artifact was improved in a few ways. First, input validation for the database operations were improved. Validation was added in the repository and application layers to ensure that duplicate items are not added to the database. Secondly, the database schema for the user entity was changed to eliminate the storage of plain-text passwords. The password column was replaced with a password hash and salt. This updated the database to abide by security best practices of salting and hashing user passwords, rather than storing secrets in plain text. Finally, a Room migration was added for the inventory items. The Room database previously used fallbackToDestructiveMigration(), which erases all stored data when the schema changes. A migration was used to update the inventory item entity to include category and low-stock threshold attributes for the inventory items. This showcased my skills in having a security mindset, incorporating security by design, and prioritizing data quality and integrity. 
+	      I did meet the course outcomes I planned to meet in the module one materials, which were course outcomes four and five. Course outcome four was met by using well-founded techniques and tools to provide the database migration, as well as well-founded security packages that improved the security of the application’s sensitive data. Course outcome five was met in that the enhancement demonstrated a security-focused mindset by implementing input validation across multiple layers of the application, as well as eliminating the security flaw of storing plain-text passwords in the database. I do not have any updates to the outcome coverage plan at this time.
+	      The process of enhancing this artifact provided a learning experience in a couple different ways. I learned the importance of using input validation across multiple layers of the application. I had the unique constraint already applied to the name attribute of the inventory item, but initially I did not have any validation to catch errors if an attempt was made to create a duplicate item. The unique constraint worked at preventing the item’s insertion, but the program would crash. Properly handling the error at the application level prevented crashes and improved the user experience. I also learned how to use some aspects of the security packages used to generate a salt for the password as well as hash it. Finally, I learned that setting up a Room migration is not a catch-all for all future schema changes. Rather it is a targeted path for changing the schema between specific versions, where the specific changes are denoted in the migration plan.
+      </p>
+  </h1>
 </section>
 
     
