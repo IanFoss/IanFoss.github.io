@@ -3,126 +3,232 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CS 499 ePortfolio</title>
+  <title>CS 499 ePortfolio | Ian Foss</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-  <header>
-    <h1>CS 499 ePortfolio</h1>
-    <p>Ian Foss</p>
+  <header class="site-header">
+    <div class="header-content">
+      <h1>CS 499 ePortfolio</h1>
+      <p>Ian Foss</p>
+    </div>
   </header>
 
   <main>
+    <nav class="portfolio-nav" aria-label="Portfolio sections">
+      <a href="#self-assessment">Self-Assessment</a>
+      <a href="#code-review">Code Review</a>
+      <a href="#original-artifact">Original Artifact</a>
+      <a href="#enhancement-one">Enhancement One</a>
+      <a href="#enhancement-two">Enhancement Two</a>
+      <a href="#enhancement-three">Enhancement Three</a>
+    </nav>
 
-    <section>
+    <section id="self-assessment" class="card">
       <h2>Professional Self-Assessment</h2>
-      <p>Throughout the Computer Science program at Southern New Hampshire University, I have developed the skills needed to design, build, evaluate, and improve software systems. My coursework and ePortfolio helped me showcase my strengths in software engineering, database design, secure coding, algorithms, communication, and technical problem solving. The capstone gave me the opportunity to return to an earlier Android application, evaluate its weaknesses, and improve it through planned enhancements.
+      <p class="section-summary">
+        This self-assessment introduces my growth throughout the Computer Science program and explains how the artifacts in this portfolio demonstrate my technical and professional skills.
+      </p>
 
-        One of the most important lessons I learned is that successful software must be more than functional. It should also be readable, maintainable, secure, and useful to its intended users. Courses such as CS 320 helped me understand the importance of testing and quality assurance, focusing on creating software using Test-Driven Development. Courses like CS 405 strengthened my understanding of secure coding, input validation, authentication, and defense in depth by giving me practical experience identifying and fixing some of the most important security vulnerabilities such as buffer overflows and SQL injection. These experiences shaped my professional goal of becoming a software engineer who creates reliable and secure applications.
+      <div class="narrative">
+        <h3>Program Growth and Professional Goals</h3>
+        <p>
+          Throughout the Computer Science program at Southern New Hampshire University, I have developed the skills needed to design, build, evaluate, and improve software systems. My coursework and ePortfolio helped me showcase my strengths in software engineering, database design, secure coding, algorithms, communication, and technical problem solving. The capstone gave me the opportunity to return to an earlier Android application, evaluate its weaknesses, and improve it through planned enhancements.
+        </p>
 
-        The program also helped me improve my ability to communicate technical ideas. Through written documentation, diagrams, code reviews, and project narratives, I practiced explaining how systems work and why certain design decisions are made. Courses like CS-250 and CS-255 provided a thorough introduction to industry specific documentation that uses the Unified Modeling Language, such as UML class diagrams, sequence diagrams, and other behavioral and structural diagrams. These documents are important to accurately convey technical information in a way that is easy to understand. 
+        <p>
+          One of the most important lessons I learned is that successful software must be more than functional. It should also be readable, maintainable, secure, and useful to its intended users. Courses such as CS 320 helped me understand the importance of testing and quality assurance, with a focus on creating software using test-driven development. Courses such as CS 405 strengthened my understanding of secure coding, input validation, authentication, and defense in depth by giving me practical experience identifying and fixing important security vulnerabilities such as buffer overflows and SQL injection. These experiences shaped my professional goal of becoming a software engineer who creates reliable and secure applications.
+        </p>
 
-        Collaboration was also an important part of my growth. Even when projects were completed individually, I learned to write code and documentation in a way that would support future teamwork. Readable code, comments, consistent structure, and separation of concerns all make it easier for others to understand and contribute to a project. My capstone reflects this by improving the structure of the Android application and organizing functionality through activities, entities, DAOs, repositories, and supporting utility classes.
+        <h3>Communication and Collaboration</h3>
+        <p>
+          The program also helped me improve my ability to communicate technical ideas. Through written documentation, diagrams, code reviews, and project narratives, I practiced explaining how systems work and why certain design decisions are made. Courses such as CS 250 and CS 255 provided a thorough introduction to industry-specific documentation using the Unified Modeling Language, including UML class diagrams, sequence diagrams, and other behavioral and structural diagrams. These documents are important because they convey technical information in a way that is easier for stakeholders and development teams to understand.
+        </p>
 
-        My understanding of data structures and algorithms also grew throughout the program. I learned how searching, sorting, filtering, and complexity analysis affect application performance and usability. In my capstone, I applied these ideas by adding search, sort, and filter features to the inventory list. These features allow users to locate items by name, view items alphabetically or by quantity, and identify low-stock or out-of-stock items more efficiently. Courses like CS-300 allowed me to take a deep dive into how these algorithms work, how to analyze time and space complexity, and how to create data structures from scratch. 
+        <p>
+          Collaboration was also an important part of my growth. Even when projects were completed individually, I learned to write code and documentation in a way that would support future teamwork. Readable code, comments, consistent structure, and separation of concerns all make it easier for others to understand and contribute to a project. My capstone reflects this by improving the structure of the Android application and organizing functionality through activities, entities, DAOs, repositories, and supporting utility classes.
+        </p>
 
-        Software engineering and database development became major areas of focus for me. In CS 465, I gained experience with a MEAN stack application using Express, Angular, MongoDB, and API endpoints. This greatly sharpened my web development skills, gaining practice in working with NoSQL document-based databases, backend routing concepts, API creation, and component-based user interface design. In the end, I created a fully functional full-stack application using modern technology. In my capstone, I applied similar layered-design ideas in an Android environment using Room for local data storage. I improved the database by adding stronger validation, new schema fields, password hashing and salting, and a Room migration to support schema changes without relying on destructive migration.
+        <h3>Technical Skills</h3>
+        <p>
+          My understanding of data structures and algorithms also grew throughout the program. I learned how searching, sorting, filtering, and complexity analysis affect application performance and usability. In my capstone, I applied these ideas by adding search, sort, and filter features to the inventory list. These features allow users to locate items by name, view items alphabetically or by quantity, and identify low-stock or out-of-stock items more efficiently. Courses such as CS 300 allowed me to take a deeper look into how algorithms work, how to analyze time and space complexity, and how to create data structures from scratch.
+        </p>
 
-        The artifacts in my ePortfolio fit together as a progression of improvements to one Android inventory management application originally created in CS 360. Enhancement One modernized the app from Java to Kotlin and improved account validation. Enhancement Two added search, sort, and filter functionality to improve how users interact with inventory data. Enhancement Three improved the Room database implementation by strengthening password security, data integrity, validation, and migration handling.
+        <p>
+          Software engineering and database development became major areas of focus for me. In CS 465, I gained experience with a MEAN stack application using Express, Angular, MongoDB, and API endpoints. This sharpened my web development skills by giving me practice with NoSQL document-based databases, backend routing concepts, API creation, and component-based user interface design. In my capstone, I applied similar layered-design ideas in an Android environment using Room for local data storage. I improved the database by adding stronger validation, new schema fields, password hashing and salting, and a Room migration to support schema changes without relying on destructive migration.
+        </p>
 
-        Together, these enhancements demonstrate my ability to analyze an existing application, identify weaknesses, and improve it across multiple areas of computer science. They show my skills in software design, algorithms and data structures, database development, secure coding, collaboration, and technical communication. Completing this ePortfolio has helped me better understand my strengths and professional goals. As I move forward, I want to continue developing applications that are practical, maintainable, secure, and valuable to users.
+        <h3>Portfolio Overview</h3>
+        <p>
+          The artifacts in my ePortfolio fit together as a progression of improvements to one Android inventory management application originally created in CS 360. Enhancement One modernized the app from Java to Kotlin and improved account validation. Enhancement Two added search, sort, and filter functionality to improve how users interact with inventory data. Enhancement Three improved the Room database implementation by strengthening password security, data integrity, validation, and migration handling.
+        </p>
 
-</p>
+        <p>
+          Together, these enhancements demonstrate my ability to analyze an existing application, identify weaknesses, and improve it across multiple areas of computer science. They show my skills in software design, algorithms and data structures, database development, secure coding, collaboration, and technical communication. Completing this ePortfolio has helped me better understand my strengths and professional goals. As I move forward, I want to continue developing applications that are practical, maintainable, secure, and valuable to users.
+        </p>
+      </div>
     </section>
 
-    <section>
+    <section id="code-review" class="card">
       <h2>Code Review Video</h2>
-      <p>This video presents my original artifact and planned enhancements.</p>
+      <p class="section-summary">This video presents my original artifact and planned enhancements.</p>
 
-       <iframe width="560" height="315" src="https://www.youtube.com/embed/ZWVE5Imz2yY?si=R6EN_oF-Y4Kp-oUQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <div class="video-wrapper">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/ZWVE5Imz2yY?si=W4hatv_86p8P6g3T" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
 
       <p>
-        <a href="https://youtu.be/ZWVE5Imz2yY" target="_blank">
-          Open video on YouTube
-        </a>
+        <a class="button-link" href="https://youtu.be/ZWVE5Imz2yY" target="_blank">Open Video on YouTube</a>
       </p>
     </section>
 
-      <section>
-  <h2>Original Artifact</h2>
-  <p>The same artifiact is used for all three enhancements. You can view the original artifact project here.</p>
-  <p>
-    <a href="https://github.com/IanFoss/IanFoss.github.io/tree/main/original artifact/Ian_Foss_cs-360_project_three_inventory_app/cs360_project_three">
-      View Original Artifact Code
-    </a>
-  </p>
-</section>
-
-
-
-    
-    <section>
-  <h2>Enhancement One: Software Design and Engineering</h2>
-  <p>This enhancement modernized the Android app from Java to Kotlin and improved account validation.</p>
-  <p>
-    <a href="https://github.com/IanFoss/IanFoss.github.io/tree/main/enhancements/enhancement-one/Enhancement One">
-      View Enhancement One Code
-    </a>
-  </p>
-   <h1>   
-    <p>
-    
-	    The artifact used for this enhancement is a mobile application that was created in a course I previously took at SNHU, CS-360 Mobile Architecture and Programming. It is an inventory management application developed in Java that supports persistent data for users and items using the Room database. The app allows users to create an account, and then log in. They will then navigate to the inventory screen, where they can view existing inventory items, as well as add, edit, and delete items.
-	    I selected this item for the artifact because the application was very basic in its original form, providing a lot of opportunity to improve it. The item also represents a complete application in the sense that there are multiple connected parts that provide value that could be used in real-life, rather than just a coding exercise. Converting the project to Kotlin provided a way to modernize the application, as Kotlin is the standard programming language for Android applications. This artifact showcased my skills in a couple different aspects. It allowed me to demonstrate skills in Android architecture, including using activities for screen behavior, Room entities for database tables, DAO interfaces for database queries, repositories for data access, and an adapter for displaying inventory items in a RecyclerView. I was also able to demonstrate my ability to take an existing application and identify areas for improvement after analyzing the existing Java code. The artifact was improved by converting the Java classes to Kotlin classes, which reduced boilerplate and improved readability. Kotlin features such as null safety, data classes, lambda expressions were used to make the code less prone to errors. The input validation was also improved. I added input validation to prevent duplicate and blank usernames, blank item names, and negative item quantities. I also added stronger password requirements to improve the baseline security for accounts.
-	    I feel I did meet the course outcomes I had planned to meet for this enhancement. The enhancement strongly aligns with course outcome four because it utilizes modern Android tools and computing practices that will directly provide real-life value in inventory tracking. The enhancement improved the prospect of collaboration because it led to code that is more readable and easier to maintain. If other developers were hypothetically working on the application these improvements would improve the collaborative team environment.
-	    This enhancement provided a great opportunity to learn about the Kotlin programming language and patterns. I gained a better understanding of how Kotlin null safety works. I had to think more carefully about which values could potentially be null values and where it is appropriate to use the “?” operator to allow null values. For example, the Room query that searched for a user needed to potentially return a null UserEntity object if no user was found. Before the enhancement, the code used Java Consumer patterns to return data. Changing those to Kotlin function types really cleaned up the code and made it easier to read. One challenge I had was not breaking the app when changing the code over to Kotlin. Several times I had made changes that would make the app crash in certain spots. 
-
-    </p>
-   </h1>
-</section>
-
-    
-<section>
-  <h2>Enhancement Two: Algorithms and Data Structures</h2>
-  <p>This enhancement added search, sort, and filter functionality to the inventory list.</p>
-  <p>
-    <a href="https://github.com/IanFoss/IanFoss.github.io/tree/main/enhancements/enhancement-two/Enhancement Two">
-      View Enhancement Two Code
-    </a>
-  </p>
-    <h1>
-      <p>
-        The artifact I chose for this enhancement was again the Android application I created in my previous SNHU class, CS-360 Mobile Architecture and Programming. It is an inventory management app that supports persistent data for users and inventory items using the Room database. I chose this artifact for the enhancement because it already utilizes data structures and algorithms, but on a very basic level that can be improved well. The list of items is the perfect place to implement data structures and algorithms, as those aspects will directly affect how the list of items can be manipulated in the application. This is a common use case in the industry that can provide real value to users. 
-        The artifact showcases my ability to work with list-based data. It demonstrates principles of algorithmic thinking, specifically with the searching and sorting algorithms that I implemented in the enhancement. Search logic was added that improved usability by allowing users to find an item in the inventory without scrolling through the list manually. Filtering logic for low stock or out of stock items in the inventory was also added. Finally, sorting logic was added to allow users to view items alphabetically or by quantity. Since the application uses the Room database, the SQL queries dictated the algorithmic complexity involved in fulfilling the functionality. The search and filter functionality, along with updating the RecyclerView with the altered list of items, needs to iterate through every item in the list at most once. This is because the search logic needs to find any item with a matching string, the filter logic needs to find items that meet the filter criteria, and the RecyclerView adapter needs to update the RecyclerView with the result set after the modifications have been made. From an algorithmic complexity standpoint, the worst-case scenario time complexity for these operations will be O(n), where n is the number of items in the inventory. For the sorting functionality, there is an increased operational complexity. The Room database sorting operations are abstracted away by SQLite after the ORDER BY query is passed to it. Generally speaking, the common complexity estimate for sorting can be described as O(n log n), which could be accomplished by the quicksort or merge sort algorithms that are commonly used. While these enhancements do perform more operations and utilize more memory than the original app, the efficiency for the user is greatly improved as they no longer have to manually scroll through the list to find an item.
-	      I believe I did meet the course outcomes for this enhancement that were planned in module one. This enhancement strongly supports the course outcomes of designing and evaluating computing systems using algorithmic principles. The application uses a collection of inventory objects and applies searching, sorting, and filtering logic. This demonstrates how data structures can be used to store records, and how algorithms can be implemented to manipulate those records in useful ways. This enhancement also supports the course outcome of using well-founded computing techniques. The logic for this additional functionality was implemented through Room DAO queries and repository methods. This contributed to a separation of concerns between the activity/UI logic and the database operations. I do not have any updates to my coverage plans at this time. 
-	      This enhancement provided me with good learning experiences in a couple of ways. I learned how to use the RecyclerView in more depth. The inventory list needed to initially load every item but then display only the items that match the search, sort, or filter criteria. This required ensuring I was observing the most recent LiveData source and updating the adapter with the new list of items. One challenge was ensuring I was updated all the required classes to maintain the separation of concerns. It would have been a lot easier to just add all the logic in the inventory activity. Instead, to enhance the artifact using Android best practices, I needed to create new DAO queries to support the new functionality, repository methods to utilize the DAO queries, and then add logic for the UI components and repository method calls. Overall, this enhancement was a good learning experience in applying searching, sorting, and filtering logic to a real data set.
+    <section id="original-artifact" class="card">
+      <h2>Original Artifact</h2>
+      <p class="section-summary">
+        The same artifact is used for all three enhancements. The original project provides the baseline for the improvements demonstrated throughout this portfolio.
       </p>
-    </h1>
-</section>
-
-<section>
-  <h2>Enhancement Three: Databases</h2>
-  <p>This enhancement improved the Room database schema, password security, validation, and migration handling.</p>
-  <p>
-    <a href="https://github.com/IanFoss/IanFoss.github.io/tree/main/enhancements/enhancement-three/Enhancement Three">
-      View Enhancement Three Code
-    </a>
-  </p>
-  <h1>
       <p>
-	      This artifact is the same as the previous two artifacts, which is the mobile inventory management application developed for the Android OS. It was created in a previous course at SNHU, CS-360 Mobile Architecture and Programming. The application allows users to create an account, which they must do before logging in. After the user successfully creates an account and logs in, the app will navigate to the inventory screen, where they can view the items in the inventory, add an item, modify item attributes, and delete items. The application uses Room to store data for user accounts and for inventory items.
-	      I selected this artifact for my ePortfolio because the current implementation of the database lacks several aspects that would make the implementation acceptable in a professional application, making it a prime candidate for enhancement. The artifact was improved in a few ways. First, input validation for the database operations were improved. Validation was added in the repository and application layers to ensure that duplicate items are not added to the database. Secondly, the database schema for the user entity was changed to eliminate the storage of plain-text passwords. The password column was replaced with a password hash and salt. This updated the database to abide by security best practices of salting and hashing user passwords, rather than storing secrets in plain text. Finally, a Room migration was added for the inventory items. The Room database previously used fallbackToDestructiveMigration(), which erases all stored data when the schema changes. A migration was used to update the inventory item entity to include category and low-stock threshold attributes for the inventory items. This showcased my skills in having a security mindset, incorporating security by design, and prioritizing data quality and integrity. 
-	      I did meet the course outcomes I planned to meet in the module one materials, which were course outcomes four and five. Course outcome four was met by using well-founded techniques and tools to provide the database migration, as well as well-founded security packages that improved the security of the application’s sensitive data. Course outcome five was met in that the enhancement demonstrated a security-focused mindset by implementing input validation across multiple layers of the application, as well as eliminating the security flaw of storing plain-text passwords in the database. I do not have any updates to the outcome coverage plan at this time.
-	      The process of enhancing this artifact provided a learning experience in a couple different ways. I learned the importance of using input validation across multiple layers of the application. I had the unique constraint already applied to the name attribute of the inventory item, but initially I did not have any validation to catch errors if an attempt was made to create a duplicate item. The unique constraint worked at preventing the item’s insertion, but the program would crash. Properly handling the error at the application level prevented crashes and improved the user experience. I also learned how to use some aspects of the security packages used to generate a salt for the password as well as hash it. Finally, I learned that setting up a Room migration is not a catch-all for all future schema changes. Rather it is a targeted path for changing the schema between specific versions, where the specific changes are denoted in the migration plan.
+        <a class="button-link" href="https://github.com/IanFoss/IanFoss.github.io/tree/main/original%20artifact/Ian_Foss_cs-360_project_three_inventory_app/cs360_project_three" target="_blank">View Original Artifact Code</a>
       </p>
-  </h1>
-</section>
+    </section>
 
-    
-<footer>
-  <p>&copy; 2026 Ian Foss | CS 499 ePortfolio</p>
-</footer>
+    <section id="enhancement-one" class="card">
+      <h2>Enhancement One: Software Design and Engineering</h2>
+      <p class="section-summary">This enhancement modernized the Android app from Java to Kotlin and improved account validation.</p>
+      <p>
+        <a class="button-link" href="https://github.com/IanFoss/IanFoss.github.io/tree/main/enhancements/enhancement-one/Enhancement%20One" target="_blank">View Enhancement One Code</a>
+      </p>
+
+      <div class="narrative">
+        <h3>Artifact Description</h3>
+        <p>
+          The artifact used for this enhancement is a mobile application that was created in a course I previously took at SNHU, CS 360 Mobile Architecture and Programming. It is an inventory management application developed in Java that supports persistent data for users and items using the Room database. The app allows users to create an account and log in. They then navigate to the inventory screen, where they can view existing inventory items, as well as add, edit, and delete items.
+        </p>
+
+        <h3>Enhancement Justification</h3>
+        <p>
+          I selected this item for the artifact because the application was very basic in its original form, which provided many opportunities for improvement. The item also represents a complete application because it has multiple connected parts that provide value and could be used in a real-life setting, rather than functioning only as a coding exercise. Converting the project to Kotlin provided a way to modernize the application because Kotlin is the standard programming language for Android applications.
+        </p>
+
+        <p>
+          This artifact showcased my skills in several areas. It allowed me to demonstrate Android architecture skills, including using activities for screen behavior, Room entities for database tables, DAO interfaces for database queries, repositories for data access, and an adapter for displaying inventory items in a RecyclerView. I was also able to demonstrate my ability to take an existing application and identify areas for improvement after analyzing the existing Java code.
+        </p>
+
+        <p>
+          The artifact was improved by converting the Java classes to Kotlin classes, which reduced boilerplate and improved readability. Kotlin features such as null safety, data classes, and lambda expressions were used to make the code less prone to errors. Input validation was also improved. I added validation to prevent duplicate and blank usernames, blank item names, and negative item quantities. I also added stronger password requirements to improve the baseline security for accounts.
+        </p>
+
+        <h3>Course Outcomes</h3>
+        <p>
+          I feel I met the course outcomes I had planned to meet for this enhancement. The enhancement strongly aligns with course outcome four because it uses modern Android tools and computing practices that provide real-life value in inventory tracking. The enhancement also improved the prospect of collaboration because it led to code that is more readable and easier to maintain. If other developers were hypothetically working on the application, these improvements would support a more effective collaborative team environment.
+        </p>
+
+        <h3>Reflection</h3>
+        <p>
+          This enhancement provided a strong opportunity to learn about the Kotlin programming language and Android development patterns. I gained a better understanding of how Kotlin null safety works. I had to think more carefully about which values could potentially be null and where it was appropriate to use the question mark operator to allow null values. For example, the Room query that searched for a user needed to potentially return a null UserEntity object if no user was found.
+        </p>
+
+        <p>
+          Before the enhancement, the code used Java Consumer patterns to return data. Changing those to Kotlin function types cleaned up the code and made it easier to read. One challenge I had was avoiding breaking the app while changing the code to Kotlin. Several times, I made changes that caused the app to crash in certain areas, which required additional debugging and refinement.
+        </p>
+      </div>
+    </section>
+
+    <section id="enhancement-two" class="card">
+      <h2>Enhancement Two: Algorithms and Data Structures</h2>
+      <p class="section-summary">This enhancement added search, sort, and filter functionality to the inventory list.</p>
+      <p>
+        <a class="button-link" href="https://github.com/IanFoss/IanFoss.github.io/tree/main/enhancements/enhancement-two/Enhancement%20Two" target="_blank">View Enhancement Two Code</a>
+      </p>
+
+      <div class="narrative">
+        <h3>Artifact Description</h3>
+        <p>
+          The artifact I chose for this enhancement was again the Android application I created in my previous SNHU class, CS 360 Mobile Architecture and Programming. It is an inventory management app that supports persistent data for users and inventory items using the Room database. I chose this artifact because it already used data structures and algorithms at a basic level and provided a strong opportunity for improvement. The list of items was an appropriate place to implement data structures and algorithms because those aspects directly affect how users can manipulate inventory data in the application.
+        </p>
+
+        <h3>Enhancement Justification</h3>
+        <p>
+          The artifact showcases my ability to work with list-based data. It demonstrates algorithmic thinking through the searching, sorting, and filtering features implemented in the enhancement. Search logic was added to improve usability by allowing users to find an item in the inventory without manually scrolling through the list. Filtering logic for low-stock and out-of-stock items was also added. Sorting logic was added to allow users to view items alphabetically or by quantity.
+        </p>
+
+        <p>
+          Since the application uses the Room database, the SQL queries influence the algorithmic complexity involved in fulfilling the functionality. The search and filter functionality, along with updating the RecyclerView with the altered list of items, needs to process the relevant inventory records and display the result set. From an algorithmic complexity standpoint, the worst-case time complexity for these operations can generally be described as O(n), where n is the number of items in the inventory.
+        </p>
+
+        <p>
+          For the sorting functionality, there is increased operational complexity. The Room database sorting operations are abstracted away by SQLite after the ORDER BY query is passed to it. Generally speaking, a common complexity estimate for comparison-based sorting is O(n log n). While these enhancements perform more operations than the original app, the efficiency and usability for the user are greatly improved because they no longer need to manually scroll through the list to find an item.
+        </p>
+
+        <h3>Course Outcomes</h3>
+        <p>
+          I believe I met the course outcomes for this enhancement that were planned in Module One. This enhancement strongly supports the course outcome of designing and evaluating computing systems using algorithmic principles. The application uses a collection of inventory objects and applies searching, sorting, and filtering logic. This demonstrates how data structures can store records and how algorithms can manipulate those records in useful ways.
+        </p>
+
+        <p>
+          This enhancement also supports the course outcome of using well-founded computing techniques. The logic for this additional functionality was implemented through Room DAO queries and repository methods. This contributed to a separation of concerns between the activity/UI logic and the database operations. I do not have any updates to my coverage plans at this time.
+        </p>
+
+        <h3>Reflection</h3>
+        <p>
+          This enhancement provided valuable learning experiences. I learned how to use RecyclerView in more depth. The inventory list needed to initially load every item and then display only the items that matched the search, sort, or filter criteria. This required ensuring that I was observing the most recent LiveData source and updating the adapter with the new list of items.
+        </p>
+
+        <p>
+          One challenge was ensuring that I updated all required classes while maintaining separation of concerns. It would have been easier to add all the logic directly into the inventory activity. Instead, to enhance the artifact using Android best practices, I needed to create new DAO queries, repository methods, UI logic, and repository method calls. Overall, this enhancement was a good learning experience in applying searching, sorting, and filtering logic to a real data set.
+        </p>
+      </div>
+    </section>
+
+    <section id="enhancement-three" class="card">
+      <h2>Enhancement Three: Databases</h2>
+      <p class="section-summary">This enhancement improved the Room database schema, password security, validation, and migration handling.</p>
+      <p>
+        <a class="button-link" href="https://github.com/IanFoss/IanFoss.github.io/tree/main/enhancements/enhancement-three/Enhancement%20Three" target="_blank">View Enhancement Three Code</a>
+      </p>
+
+      <div class="narrative">
+        <h3>Artifact Description</h3>
+        <p>
+          This artifact is the same as the previous two artifacts, which is the mobile inventory management application developed for the Android OS. It was created in a previous course at SNHU, CS 360 Mobile Architecture and Programming. The application allows users to create an account, which they must do before logging in. After the user successfully creates an account and logs in, the app navigates to the inventory screen, where they can view the items in the inventory, add an item, modify item attributes, and delete items. The application uses Room to store data for user accounts and inventory items.
+        </p>
+
+        <h3>Enhancement Justification</h3>
+        <p>
+          I selected this artifact for my ePortfolio because the previous implementation of the database lacked several aspects that would make the implementation acceptable in a professional application, making it a strong candidate for enhancement. The artifact was improved in several ways. First, database operation validation was improved. Validation was added in the repository and application layers to ensure that duplicate items are not added to the database.
+        </p>
+
+        <p>
+          Second, the database schema for the user entity was changed to eliminate the storage of plaintext passwords. The password column was replaced with a password hash and salt. This updated the database to follow security best practices by salting and hashing user passwords rather than storing secrets in plaintext.
+        </p>
+
+        <p>
+          Finally, a Room migration was added for the inventory items. The Room database previously used fallbackToDestructiveMigration(), which erases all stored data when the schema changes. A migration was used to update the inventory item entity to include category and low-stock-threshold attributes. This showcased my skills in applying a security mindset, incorporating security by design, and prioritizing data quality and integrity.
+        </p>
+
+        <h3>Course Outcomes</h3>
+        <p>
+          I met the course outcomes I planned to meet in the Module One materials, which were course outcomes four and five. Course outcome four was met by using well-founded techniques and tools to provide the database migration, as well as standard security techniques that improved the security of the application’s sensitive data.
+        </p>
+
+        <p>
+          Course outcome five was met because the enhancement demonstrated a security-focused mindset by implementing input validation across multiple layers of the application and eliminating the security flaw of storing plaintext passwords in the database. I do not have any updates to the outcome coverage plan at this time.
+        </p>
+
+        <h3>Reflection</h3>
+        <p>
+          The process of enhancing this artifact provided a learning experience in several ways. I learned the importance of using input validation across multiple layers of the application. I already had the unique constraint applied to the name attribute of the inventory item, but initially I did not have validation to catch errors if an attempt was made to create a duplicate item. The unique constraint prevented the item from being inserted, but the program would crash. Properly handling the error at the application level prevented crashes and improved the user experience.
+        </p>
+
+        <p>
+          I also learned how to use security-related classes to generate a salt and hash user passwords. Finally, I learned that setting up a Room migration is not a catch-all for all future schema changes. Rather, it is a targeted path for changing the schema between specific database versions, where the specific changes are defined in the migration plan.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Ian Foss | CS 499 ePortfolio</p>
+  </footer>
 </body>
 </html>
-
